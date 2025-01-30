@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import Post from '../Services/Post'
+import React, { useState } from 'react';
+import Post from '../Services/Post';
+
 
 function Home() {
     const [file, setFile] = useState(null);
@@ -21,16 +22,16 @@ function Home() {
     }
 
     return (
-        <div>
-            <h3>Enviar Pdf</h3>
+        <div className="container">
+            <h3>¡Transforma tu PDF a Drive!</h3>
             <form onSubmit={enviar}>
-                <label htmlFor="fileInput">Pdf</label>
+                <label htmlFor="fileInput">Sube tu archivo PDF:</label>
                 <input 
                     id="fileInput"
                     type="file"
                     onChange={cargarFile} 
                 />
-                <p>caca</p>
+                <p>¡Sube tu archivo PDF y deja que nuestra plataforma lo transforme y lo lleve a un Drive como nunca antes! ¡Casi como magia, pero con más tecnología! 🔮📄🚀</p>
                 <button type="submit">Enviar</button>
             </form>
         </div>
