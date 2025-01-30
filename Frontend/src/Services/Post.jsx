@@ -7,8 +7,8 @@ async function Post(file) {
             method: 'POST',
             body: formData
         });
-        const data = await response.json();
-        console.log('Datos extraídos:', data);
+        const  data = await response.json();
+         console.log('Datos extraídos:', data);
     } catch (error) {
         console.error('Error:', error);
     }

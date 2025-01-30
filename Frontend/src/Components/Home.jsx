@@ -14,9 +14,7 @@ function Home() {
             if (file) {
                 await Post(file);  // Enviamos el archivo al backend
                 alert('Se envió el pdf al backend');
-            } else {
-                alert('Por favor, selecciona un archivo primero');
-            }
+            } 
         } catch (error) {
             alert('Hubo un error al enviar el pdf al backend', error);
         }
